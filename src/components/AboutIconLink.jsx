@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AboutIconLink = () => {
   return (
-    <div className="about-linl">
+    <div className="about-link">
       <Link to={{ pathname: "/about" }}>
         <FaQuestion size={30} />
       </Link>
