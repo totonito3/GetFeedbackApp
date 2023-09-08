@@ -1,11 +1,14 @@
+/* Import font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* Set box-sizing to border-box and reset margin and padding */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Set font family, background color, and line height for body */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #202142;
@@ -13,16 +16,19 @@ body {
   line-height: 1.6;
 }
 
+/* Remove list style for ul */
 ul {
   list-style: none;
 }
 
+/* Set max-width, margin, and padding for .container */
 .container {
   max-width: 768px;
   margin: auto;
   padding: 0 20px;
 }
 
+/* Set height, width, display, justify-content, and align-items for header */
 header {
   height: 70px;
   width: 100%;
@@ -32,6 +38,7 @@ header {
   margin-bottom: 30px;
 }
 
+/* Set background color, color, border-radius, padding, margin, and position for .card */
 .card {
   background-color: #fff;
   color: #333;
@@ -41,17 +48,20 @@ header {
   position: relative;
 }
 
+/* Set background color and color for .card.reverse */
 .card.reverse {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
 }
 
+/* Set font size, font weight, and text-align for h2 in .card */
 .card h2 {
   font-size: 22px;
   font-weight: 600;
   text-align: center;
 }
 
+/* Set display, justify-content, and align-items for .rating */
 .rating {
   display: flex;
   align-items: center;
@@ -59,6 +69,7 @@ header {
   margin: 30px 0 40px;
 }
 
+/* Set position, background, width, height, padding, text-align, border-radius, font-size, border, and transition for .rating li and .num-display */
 .rating li,
 .num-display {
   position: relative;
@@ -73,6 +84,7 @@ header {
   transition: 0.3s;
 }
 
+/* Set position, top, left, width, height, padding, border-radius, and transform for label in .rating li */
 .rating li label {
   position: absolute;
   top: 50%;
@@ -85,21 +97,25 @@ header {
   cursor: pointer;
 }
 
+/* Set background and color for .rating li on hover and .num-display */
 .rating li:hover,
 .num-display {
   background: #ff6a95;
   color: #fff;
 }
 
+/* Hide radio buttons */
 [type='radio'] {
   opacity: 0;
 }
 
+/* Set background and color for label when radio button is checked */
 [type='radio']:checked ~ label {
   background: #ff6a95;
   color: #fff;
 }
 
+/* Set display and flex-direction for .input-group */
 .input-group {
   display: flex;
   flex-direction: row;
@@ -108,16 +124,19 @@ header {
   border-radius: 8px;
 }
 
+/* Set flex-grow and font-size for input in .input-group */
 input {
   flex-grow: 2;
   border: none;
   font-size: 16px;
 }
 
+/* Remove outline for input on focus */
 input:focus {
   outline: none;
 }
 
+/* Set color, display, justify-content, and align-items for .feedback-stats */
 .feedback-stats {
   color: #fff;
   display: flex;
@@ -125,12 +144,14 @@ input:focus {
   align-items: center;
 }
 
+/* Set position, top, and left for .num-display */
 .num-display {
   position: absolute;
   top: -10px;
   left: -10px;
 }
 
+/* Set position, top, and right for .close and .edit */
 .close,
 .edit {
   position: absolute;
@@ -141,10 +162,12 @@ input:focus {
   border: none;
 }
 
+/* Set right for .edit */
 .edit {
   right: 40px;
 }
 
+/* Set color, border, border-radius, color, width, height, and cursor for .btn */
 .btn {
   color: #fff;
   border: 0;
@@ -155,76 +178,91 @@ input:focus {
   cursor: pointer;
 }
 
+/* Set background color for .btn-primary */
 .btn-primary {
   background-color: #202142;
 }
 
+/* Set background color for .btn-secondary */
 .btn-secondary {
   background: #ff6a95;
 }
 
+/* Set transform and opacity for .btn on hover */
 .btn:hover {
   transform: scale(0.98);
   opacity: 0.9;
 }
 
+/* Set background color, color, and cursor for disabled .btn */
 .btn:disabled {
   background-color: #cccccc;
   color: #333;
   cursor: auto;
 }
 
+/* Set transform and opacity for disabled .btn on hover */
 .btn:disabled:hover {
   transform: scale(1);
   opacity: 1;
 }
 
+/* Set padding-top and text-align for .message */
 .message {
   padding-top: 10px;
   text-align: center;
   color: rebeccapurple;
 }
 
-/* FIX: Remove position: absolute to keep about icon at the bottom of the
- * document */
+/* FIX: Remove position: absolute to keep about icon at the bottom of the document */
 .about-link {
   display: flex;
   justify-content: flex-end;
 }
 
-/* FIX: Remove position: absolute to keep about icon at the bottom of the
- * document */
+/* FIX: Remove position: absolute to keep about icon at the bottom of the document */
 .about-link a {
   color: #fff;
   cursor: pointer;
 }
 
+/* Set color for .about-link a on hover */
 .about-link a:hover {
   color: #ff6a95;
 }
 
+/* Set margin-bottom for h1 in .about */
 .about h1 {
   margin-bottom: 20px;
 }
 
+/* Set margin for p in .about */
 .about p {
   margin: 10px 0;
 }
 
+/* Set margin and flex-wrap for .rating on media query */
 @media (max-width: 600px) {
   .rating li {
     margin: 10px 3px;
   }
 
-  .rating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 30px 0 40px;
-  }
+  /* Set the display property of the rating class to flex */
+.rating {
+  display: flex;
+  /* Align items in the center */
+  align-items: center;
+  /* Justify content in the center */
+  justify-content: center;
+  /* Wrap the elements if needed */
+  flex-wrap: wrap;
+  /* Add margin around the element */
+  margin: 30px 0 40px;
+}
 
-  .input-group input {
-    width: 80%;
-  }
+/* Set the width of the input group to 80% */
+.input-group input {
+  width: 80%;
+}
+
 }
