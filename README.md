@@ -1,6 +1,5 @@
 # GetFeedback App
 
-![App Screenshot](screenshot.png)
 
 GetFeedback App is a feedback form application built using React and the Context API. It provides a simple and user-friendly way for users to submit feedback and view the average rating of all the feedback received.
 
