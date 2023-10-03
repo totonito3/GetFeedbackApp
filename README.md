@@ -1,34 +1,73 @@
-# GetFeedbackApp
+# GetFeedback App
 
-Welcome to the GetFeedbackApp repository! This project was created by [totonito3](https://github.com/totonito3) and is a React application that allows users to provide feedback on various topics.
+![App Screenshot](screenshot.png)
+
+GetFeedback App is a feedback form application built using React and the Context API. It provides a simple and user-friendly way for users to submit feedback and view the average rating of all the feedback received.
 
 ## Features
 
-This application has the following features:
+- **Feedback Submission:** Users can easily submit their feedback along with a rating of their experience.
 
-- Create surveys with multiple questions
-- View survey results in real time
-- Export survey results as CSV files
-- Customize survey design
+- **Feedback List:** The application displays all the submitted feedbacks in a clean and organized manner, making it easy for users to view their feedback history.
 
-## Installation
+- **Average Rating:** The app calculates and displays the average rating based on all the feedback received.
 
-To install this application, you will need to have Node.js and npm installed on your machine. Once you have those installed, clone this repository and run `npm install` to install all the necessary dependencies. After that, you can run `npm start` to launch the application.
+- **Edit and Delete:** Users have the option to edit or delete their feedback entries if needed.
 
-## File Structure
+## Technologies Used
 
-The project is organized into the following folders and files:
+- **React:** The app is built using React, a popular JavaScript library for building user interfaces.
 
-- **public/** - Contains static assets such as images and HTML files.
-- **src/** - Contains all the source code for the application.
-  - **components/** - Contains React components used throughout the application.
-  - **containers/** - Contains higher-level components that contain other components.
-  - **redux/** - Contains Redux actions, reducers, and store configuration.
-  - **styles/** - Contains CSS stylesheets.
-  - **utils/** - Contains utility functions.
-- **package.json** - Contains information about the project and its dependencies.
-- **README.md** - Contains information about the project.
+- **Context API:** The Context API is used for state management, allowing seamless sharing of feedback data between different components.
 
-## Contributing
+- **useContext Hook:** This hook is employed to access and manage data from the context throughout the application.
 
-If you would like to contribute to this project, please feel free to submit a pull request. All contributions are welcome and appreciated!
+## Getting Started
+
+To get started with the GetFeedback App on your local machine, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/totonito3/getfeedback-app.git
+
+	2.	Change directory to the project folder:
+
+cd getfeedback-app
+
+
+	3.	Install dependencies:
+
+npm install
+
+
+	4.	Start the development server:
+
+npm start
+
+
+
+The app should now be running locally at http://localhost:3000/.
+
+Usage
+
+	1.	Access the app in your browser.
+	2.	Submit feedback by filling out the form and selecting a rating.
+	3.	View all submitted feedbacks on the main page.
+	4.	Edit or delete feedback entries as needed.
+	5.	Observe the average rating displayed on the page.
+
+Contributing
+
+Contributions are welcome! If you’d like to enhance the GetFeedback App, please follow these steps:
+
+	1.	Fork the repository.
+	2.	Create a new branch for your feature: git checkout -b feature-name.
+	3.	Make your changes and commit them: git commit -m 'Add some feature'.
+	4.	Push to the branch: git push origin feature-name.
+	5.	Submit a pull request with a detailed description of your changes.
+
+
+Acknowledgements
+
+Feel free to open an issue if you encounter any problems or have suggestions for improvements. Happy feedback collecting!
